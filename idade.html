@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo teste idade</title>
+    <script language="JavaScript">
+        var nome = "";
+        var idade = "";
+        var mostra = "";
+        nome = window.prompt("Seu nome <digite 'sair' para encerrar>: ");
+        while (nome != "sair") {
+            idade = window.prompt("Sua Idade: ");
+            categoria = "";
+            if (idade<18) {
+                categoria = "Menor";
+            } 
+            else
+            {
+                categoria = "Maior";
+            }
+            mostra = mostra + (nome+" você é "+categoria+" de idade") + "\n";
+            var sexo = window.prompt("Informe o Sexo (m/f)? ");
+            //Exemplo de condição Move
+            nomesexo = (sexo == "M" || sexo == "m"?"homem":"mulher");
+            /*
+            O comando acima equivale a 
+            if (sexo == "M" || sexo =="m") {
+                nomesexo = "homem";
+            } 
+            else
+            {
+                nomesexo = "mulher"
+            }
+            */
+            mostra = mostra + (nome+" é "+nomesexo) +"\n";
+            window.alert(mostra);
+            mostra = "";
+            nome = window.prompt("Seu nome <digite 'sair' para encerrar>: ");
+        }
+    </script>
+</head>
+<body>
+    <h1>Terminou ;-D</h1>
+</body>
+</html>

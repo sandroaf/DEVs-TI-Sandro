@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="estilo.css"> -->
+
+    <!-- Utilizando Biblioteca Moment.js - https://momentjs.com/ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.3/moment.min.js"></script>
+    <script>
+        moment().format();
+    </script>
+    
+    <script language="JavaScript" src="funcoes.js"></script>
+    <title>Desafio 24-06 - Diferença Datas e Validação e-mail</title>
+</head>
+<h1>Desafio 24-06</h1>
+<p>Diferença Datas e Validação e-mail</p>
+Data de Nascimento (dd/mm/yyy):
+<input type="text" id="iData" name="id=">
+<input type="button" value="Idade" onclick="fIdadem()">
+<br/>
+e-mail: 
+<input type="text" id="iEmail" name="Email">
+<input type="button" value="Verificar" onclick="fValidaEmail()">
+<body>

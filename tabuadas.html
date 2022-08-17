@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos Tabuadas e fatorias</title>
+    <script language="JavaScript">
+        var opcao = window.prompt('1 - tabuada simples\n2 - tabuada complexa\n3- fatorial');
+        switch (opcao) {
+        case "1": {
+            var num = window.prompt('Informe um valor para mostrar a tabuada de 0 a 10');
+            if (isNaN(num)) {
+                window.alert("Valor precisa ser um número");
+            } else {
+                for(x=0;x<=10;x++) {
+                    document.write(num+" x "+x+" = "+num*x);
+                    document.write("<br>");
+                }
+            }
+            break;
+        }
+        case "2": {
+            var num = window.prompt('Informe um valor para mostrar a tabuada');
+            var ate = window.prompt('Tabuada até: ');
+            if (isNaN(num) || isNaN(ate)) {
+                window.alert("Valores precisam ser um número");
+            } else {
+                for(x=0;x<=ate;x++) {
+                    document.write(num+" x "+x+" = "+num*x);
+                    document.write("<br>");
+                }
+            }
+            break;
+        }
+        case "3": {
+            var num = window.prompt('Informe um valor para mostrar o fatorial');
+            if (isNaN(num)) {
+                window.alert("Valor precisa ser um número");
+            } else {
+                fatorial = 1;
+                for(x=num;x>1;x--) {
+                    fatorial = fatorial*x; 
+                }
+                document.write("O fatorial de "+num+" é: "+fatorial);
+                document.write("<br>");
+            }
+            break;
+        }
+        default: {
+            window.alert("Opção Inválida");
+        }
+    }
+    </script>
+</head>
+    
+<body>
+    
+
+</body>
+</html>

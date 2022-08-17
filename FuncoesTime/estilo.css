@@ -1,0 +1,44 @@
+body {
+    background-color: rgb(12, 12, 65);
+}
+
+h1 {
+    color: darkkhaki;
+    text-align: center;
+}
+
+div {
+    text-align: center;
+    color:blanchedalmond;
+}
+
+input.button, input.button-dado {
+    width: 80px;
+    height: 40px;
+    padding: 5px auto;
+    border: 1px solid grey;
+    color: white;
+    background-color: darkgoldenrod;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+input.button-dado {
+    width: 120px;
+    color: black;
+    background-color: lightgreen;
+}
+
+span#vDado {
+    margin: 5px;
+    width: 80px;
+    height: 40px;
+    padding: 10px ;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid rgb(0, 255, 229);
+    color:greenyellow;
+    background-color: black;
+    font-family: monospace;
+}

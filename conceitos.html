@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script language="JavaScript">
+        document.write("Exemplos de Conceitos em JavaScript<br>");
+        document.write("Os comentários são // Uma Linha e /* ..Várias Linhas.. */<br>");
+        //Essa linha está comentada - O objeto Console permite interagir com o Console do Navegador
+        //alert("Veja a mensagem");
+        console.log("Comando após o comentário de uma linha"); //Exibe mensagem no console 
+        /*
+           Comentários de Várias linhas
+           Permite ter um descritivo maior dentro do código
+           Ou suspender parte do código.
+        */
+        console.log("Mensagem após comentário de várias linhas");  
+        document.write("Variáveis<br>"); 
+        var nome = ""; //variável nome do tipo cacacteres
+        nome = window.prompt("Qual seu nome? ");
+        document.write("Olá "+nome+ " tenha um bom dia ;-D<br>");
+        var numero = 12; //variável numérica
+        document.write("O valor "+numero+" vezes ele é :");
+        resultado = numero * numero; //atribuição de cálculo
+        document.write(resultado+" <br>");
+        var verdadeiro = true; //variável Boleana
+        document.write("O valor da variável ´verdadeiro´ é: <br>");
+        document.write(verdadeiro);
+        verdadeiro = ! verdadeiro; //transformei verdadeiro para falso
+        document.write("<br>");
+        document.write(verdadeiro);
+        
+        document.write("<br>");
+        var valors = "3"; //Valor '3' é um String
+        valors = parseInt(valors); //converte um String para um valor inteiro
+        document.write(valors+valors);
+
+    </script>
+    <title>Conceitos JavaScript</title>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo manipúlação Arrays - Mês</title>
+    <script language="JavaScript">
+        var meses = ["Janeiro","Fevereiro","Março","Abril","Maio","junho","Julho","Agosto","Setembro","Outubto","Novembro","Dezembro"];
+        var estacoes = [];  
+        estacoes["pri"] = "primavera";
+        estacoes["ver"] = "O verão é uma estação propícia para esportes aquáticos";
+        estacoes["out"] = "outuno";
+        estacoes["inv"] = "inverno";
+
+        var nro_mes = parseInt(window.prompt("Informe o nro do mês (0 para sair):"));
+        while (nro_mes != 0) {
+                if (!isNaN(nro_mes)) {
+                    if (nro_mes > 0 && nro_mes < 13) {
+                        window.alert("O mês correspondente ao valor: "+nro_mes+" e : "+meses[nro_mes-1]);                    
+                        if (nro_mes == 12 || nro_mes == 1 || nro_mes == 2) 
+                        {
+                            window.alert(estacoes["ver"]);
+                        } 
+                        else if (nro_mes == 3 || nro_mes == 4 || nro_mes == 5) 
+                        {
+                            window.alert(estacoes["out"]);
+                        } 
+                        else if (nro_mes == 6 || nro_mes == 7 || nro_mes == 8) 
+                        {
+                            window.alert(estacoes["inv"]);
+                        }    
+                        else 
+                        {
+                            window.alert(estacoes["pri"]);
+                        }    
+                    }    
+                    else 
+                    {
+                        window.alert("ERRO: Valor informado não corresponde a um mês."); 
+                            
+                    }
+                } 
+                else
+                {
+                    window.alert("ERRO: Valor não numério."); 
+                }
+                var nro_mes = window.prompt("Informe o nro do mês (0 para sair):")
+            }
+    </script>
+</head>
+<body>
+    <h2>Concluído</h2>
+    <input type="button" value="Executar novamente" onclick="JavaScript: location.reload()">
+</body>
+</html>

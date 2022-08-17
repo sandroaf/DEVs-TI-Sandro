@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo execução de Eventos</title>
+    <script language="JavaScript">
+        function show(msg,cor) {
+            janela = window.open("","_blank","width=400,height=200");
+            janela.document.write("<h2 style='color:"+cor+"'>"+msg+"</h2>");
+            janela.document.write("<input type='button' value='ok' onclick='window.close()'>");    
+
+            return(janela);
+        }
+
+        function borda(obj,acao) {
+            if (acao == "mostrar") {
+                obj.style ="background-color: #dddddd";
+                obj.style
+            } 
+            if (acao == "esconder") {
+                obj.style ="background-color: #ffffff";
+            }
+        }
+    </script>
+</head>
+<!--evento onload() executado quando a página termina de carregar -->
+<body onload="show('Página terminou de carregar','blue')" onblur="show('Você trocou de página','#993322')">
+    <h2>Apresentação</h2>
+    <p>Essa página tem por propósito mostrar a execução de eventos JavaScript</p>
+    <br>
+    <!-- Evento onchange quando um elemento perde o foco e teve alteração de seu conteúdo --> 
+    Seu Nome: <input type="text" name="Nome" id="inome" value="" onchange="show('Olá '+inome.value,'#00FF00')" onmouseenter="borda(this,'mostrar')" onmouseout="borda(this,'esconder')"> <br>
+    <!-- Evento onblur quando um elemento perde o foco. Ao sair do elemento.  --> 
+
+    Sua idade <input type="text" name="Idade" id="iidade" value="" onblur="show(inome.value+' Você saiu da idade independente de alterar o conteúdo','#33FF66')"> <br>
+
+
+
+</body>
+</html>

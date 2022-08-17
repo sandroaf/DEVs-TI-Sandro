@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio js2</title>
+    <!--
+    Com base nos conceitos e exemplos realizados desenvolva um página Web para:
+    Solicite a entrada de um valor numérico
+    Teste se é um numero, senão informe erro
+    Após calcule se esse número é Par ou Ímpar (Dica o operado % traz o resto da divisão) e també diga se o valor é uma dezena, centena ou milhar.
+    -->
+    
+<script language="JavaScript">
+    //inicia variável
+    var num = 0;
+    var resto = 0;
+    num = window.prompt("valor: ");
+    if (isNaN(num)) {
+        document.write("Valor não é numérico !!");
+        document.write("<br/>");
+    } 
+    else
+    {
+        num = parseFloat(num);
+        resto = (num % 2);
+        if (resto == 0 || resto == -0) {
+            document.write("O valor "+num+" é um número par");
+            document.write("<br/>");
+        }
+        else 
+        {
+            document.write("O valor "+num+" é um número ímpar");
+            document.write("<br/>");
+        }
+        if ((num >= 0 && num <10) || (num < 0 && num > -10)) {
+            //unidade
+            document.write("O valor "+num+" é uma unidade");
+            document.write("<br/>");
+        }
+        else if ((num >= 10 && num <=99)||(num < -9 && num >= -99)) {
+            //dezena
+            document.write("O valor "+num+" é uma dezena");
+            document.write("<br/>");
+        } else if ((num > 99 && num < 1000)||(num < -99 && num > -1000)) {
+            //centena
+            document.write("O valor "+num+" é uma centena");
+            document.write("<br/>");
+        } else {
+            //milhar
+            document.write("O valor "+num+" é um milhar");
+            document.write("<br/>");
+        }
+    }
+</script>   
+</head>
+<body>
+    
+</body>
+</html>

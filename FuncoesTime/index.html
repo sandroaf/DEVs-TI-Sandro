@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <script language="JavaScript" src="funcoes.js"></script>
+    <title>Exemplos uso de Funções e SetInterval e SetTimeOut</title>
+</head>
+<body onload="fStart()">
+    <h1>Exemplos uso de Funções<br>SetInterval e SetTimeOut</h1>
+    <div>
+       data: <span id="vData"></span>&nbsp;|
+       hora: <span id="vHora"></span>
+    </div>
+    <br>
+    <div>
+       <input type="button" value="Iniciar" class="button" onclick="fMostraHora(vHora)" id="acao"> 
+    </div>
+    
+    <h1>Sorteio Dado</h1>
+    <div>
+       <input type="button" value="Jogar Dado" class="button-dado" onclick="vDado.innerHTML = fJogaDado()" id="Dado"> 
+       <br>
+       <br>
+       <span id="vDado">&nbsp;</span> 
+    </div>
+    <br>
+    <br>
+    <div>
+        <label for="vPesquisar">
+            Pesquisar: 
+        </label>
+        <input type="text" value="" name="vPesquisar" id="vPesquisar">
+        <input type="button" value="Ir" onclick="ir(vPesquisar)">
+    </div>
+
+</body>
+</html>

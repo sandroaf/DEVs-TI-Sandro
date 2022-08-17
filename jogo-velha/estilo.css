@@ -1,0 +1,30 @@
+body {
+    background-color: rgb(43, 43, 43);
+    font-family:Verdana, Geneva, Tahoma, sans-serif; 
+    font-size: 16px;
+  }
+  
+
+  h1 {
+    color: rgb(255, 217, 0);
+    margin-left: 20px;
+  }
+
+  label {
+    margin-left: 20px;;
+    color: rgb(221, 221, 113);
+  }
+  
+  table {
+    background-color: bisque;
+    margin-left: 20px;;
+  }
+
+  td {
+    height: 50px;
+    width: 50px;
+    background-image: url('limpo.png');
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+    border: 1px solid;
+  }
