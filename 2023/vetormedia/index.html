@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valores Vetor - Média</title>
+    <script language="JavaScript" src="fvetor.js"></script>
+</head>
+<body>
+    <h1>Média Valores em Vetor</h1>
+    <p>2. Criar um programa que entre com diversos números em um vetor e informe a média dos valores. </p>
+    <form>
+        <label for="iValor">Informe um Valor</label>
+        <input type="number" step="0.01" id="iValor">
+        <br>
+        <button type="button" onclick="alert(fVetorIncluir(parseFloat(document.querySelector('#iValor').value)))">
+        Salvar</button>
+        <br>
+        <br>
+        <button type="button" onclick="fVetorMedia('dResultado')">Mostrar + Média</button>
+        <br>
+        <div id="dResultado"></div>
+    </form>
+</body>
+</html>
