@@ -17,7 +17,7 @@ function fVetorMedia(idResultado) {
         SomaValores += vetornum[i];       
         vidResultado.innerHTML += "<li>"+vetornum[i]+"</li>" 
     }
-    vidResultado.innerHTML += "</ol>"
+    vidResultado.innerHTML += "</ol>";
     media = SomaValores / vetornum.length;
     vidResultado.innerHTML += "<br>Média: "+media;
 }
